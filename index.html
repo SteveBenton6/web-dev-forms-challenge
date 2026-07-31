@@ -14,9 +14,9 @@
   </head>
   <body>
     <!-- html comments -->
-     <header>
+    <header>
       <h1>Contact Us</h1>
-     </header>
+    </header>
     <main>
       <form action="/" method="GET">
         <section>
@@ -28,25 +28,25 @@
             </li>
             <li>
               <label for="youremail">Your E-Mail Address</label>
-              <input type="email" name="user-email" id="youremail" />
+              <input type="email" name="user-email" id="youremail" required/>
             </li>
             <li>
-              <label for="yourphone">Your E-Mail Address</label>
-              <input type="number" name="user-phone" id="yourphone" />
+              <label for="yourphone">Your Phone Number</label>
+              <input type="tel" name="user-phone" id="yourphone" required minlength="11"/>
             </li>
             <li>
               <label for="usermessage">Your Message:</label>								
-              <textarea id="usermessage" name="user-message" rows="8"></textarea>								
-            </li>
-            <li>
-              <label for="howfindus">How did you find us?</label>			
-              <select id="howfindus" name="favourite-color">			
-                <option value="web">Web Search</option>			
-                <option value="verbal">Word of Mouth</option>			
-                <option>Other</option>				
-              </select>			
+              <textarea id="usermessage" name="user-message" rows="8" required minlength="20" maxlength="500"></textarea>								
             </li>
           </ul>
+        </section>
+        <section>
+          <label for="howfindus">How did you find us?</label>			
+            <select id="howfindus" name="how-found-by-user" required>			
+              <option value="web">Web Search</option>			
+              <option value="verbal">Word of Mouth</option>			
+              <option>Other</option>				
+            </select>		
         </section>
         <section>
           <h2>How should we reply?</h2>
@@ -57,6 +57,7 @@
                 name="reply-method"
                 id="reply-phone"
                 value="phone"
+                required
               />
               <label for="reply-phone">Call me</label>
             </li>
@@ -67,6 +68,7 @@
                 name="reply-method"
                 id="reply-email"
                 value="email"
+                required
               />
               <label for="reply-email">Send me an email</label>
           </li>
@@ -76,14 +78,15 @@
                 name="reply-method"
                 id="reply-dont"
                 value="dont"
+                required
               />
               <label for="reply-dont">Don't reply</label>
             </li>
           </ul>
-          <div class="verify-buttons terms">
-            <input type="checkbox" name="terms" id="accept-terms" value="email" />
-            <label for="accept-terms">Accept Terms</label>
-          </div>
+        </section>
+        <section class="verify-buttons terms">
+          <input type="checkbox" name="terms" id="accept-terms" value="email" required/>
+          <label for="accept-terms">Accept Terms</label>
         </section>
         <section class="buttons">
           <button type="reset" class="reset-button">Clear</button>
@@ -91,10 +94,6 @@
         </section>
       </form>
     </main>
-      
-
-     
-    
     <script src="./app.js"></script>
   </body>
 </html>
