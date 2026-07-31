@@ -1,0 +1,83 @@
+/* CSS Comments Format */
+
+body {
+  background-color: lightblue;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: rgb(245, 243, 243);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  display: box;
+  font: inherit;
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(191, 218, 242);
+  color: blue;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.verify-buttons {
+  display: flex;
+}
+
+.verify-buttons input {
+  width: auto;
+  margin-right: 0.75rem;
+}
+
+.terms {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+
+#submit-button {
+  background-color: blue;
+  color: white;
+}
+
+#submit-button:hover {
+  background-color: rgb(70, 70, 202);
+  color: white;
+}

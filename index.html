@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <!-- html comments -->
+     <header>
+      <h1>Contact Us</h1>
+     </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required/>
+            </li>
+            <li>
+              <label for="youremail">Your E-Mail Address</label>
+              <input type="email" name="user-email" id="youremail" />
+            </li>
+            <li>
+              <label for="yourphone">Your E-Mail Address</label>
+              <input type="number" name="user-phone" id="yourphone" />
+            </li>
+            <li>
+              <label for="usermessage">Your Message:</label>								
+              <textarea id="usermessage" name="user-message" rows="8"></textarea>								
+            </li>
+            <li>
+              <label for="howfindus">How did you find us?</label>			
+              <select id="howfindus" name="favourite-color">			
+                <option value="web">Web Search</option>			
+                <option value="verbal">Word of Mouth</option>			
+                <option>Other</option>				
+              </select>			
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="verify-buttons">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-phone"
+                value="phone"
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+            
+            <li class="verify-buttons">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-email"
+                value="email"
+              />
+              <label for="reply-email">Send me an email</label>
+          </li>
+            <li class="verify-buttons">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-dont"
+                value="dont"
+              />
+              <label for="reply-dont">Don't reply</label>
+            </li>
+          </ul>
+          <div class="verify-buttons terms">
+            <input type="checkbox" name="terms" id="accept-terms" value="email" />
+            <label for="accept-terms">Accept Terms</label>
+          </div>
+        </section>
+        <section class="buttons">
+          <button type="reset" class="reset-button">Clear</button>
+          <button id="submit-button">Submit</button>
+        </section>
+      </form>
+    </main>
+      
+
+     
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
+</section>
